@@ -25,11 +25,21 @@ class RateService
 
     public function ConvertToUserCurrency($amount, $currency): float
     {
+        if(empty(self::$rates))
+        {
+            throw new \Exception('Rates not found.');
+        }
+
         return (float)($amount * self::$rates[$currency]);
     }
 
     public function ConvertToDefaultCurrency($amount, $currency): float
     {
+        if(empty(self::$rates))
+        {
+            throw new \Exception('Rates not found.');
+        }
+
         return (float)( $amount / self::$rates[$currency]);
     }
 
