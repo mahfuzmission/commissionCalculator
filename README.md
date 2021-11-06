@@ -6,7 +6,7 @@ A project that parses transactions from a csv file and calculates commission fee
 
 `* composer `
 
-`* php version : 7.1.13 `
+`* php version : 7.1.30 `
 
 ## Installation
 
