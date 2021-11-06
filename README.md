@@ -29,4 +29,4 @@ And one more thing as I don't have any private key for the `Exchange Rates Api`,
 
 Install dev dependencies via composer and run tests.
 
-     bin/phpunit tests
+     bin/phpunit
