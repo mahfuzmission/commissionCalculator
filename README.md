@@ -23,7 +23,7 @@ And one more thing as I don't have any private key for the `Exchange Rates Api`,
 
 ## Demo
 
-     php script.php input.csv
+     php app.php input.csv
 
 ## Tests
 
