@@ -20,7 +20,7 @@ class TransactionCommissionService
         $this->calculateDepositFee = $calculateDepositFee;
     }
 
-    public function calculateFees($transaction_data): string {
+    public function calculateFees($transaction_data): float {
         $chargeFee = 0.00;
 
         if($transaction_data['operation_type'] == "deposit")
@@ -32,6 +32,6 @@ class TransactionCommissionService
             $chargeFee =  $this->calculateWithdrawFee->calculateFee($transaction_data);
         }
 
-        return number_format((double)$chargeFee, 2, '.', '');
+        return (float) number_format((double)$chargeFee, 2, '.', '');
     }
 }
