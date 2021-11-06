@@ -1,0 +1,37 @@
+{
+    "name": "mahfuzmission/commission-task",
+    "description": "Calculate transactions commission according to latest exchange rates, user type from csv data",
+    "keywords": [],
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "CommissionTask\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "CommissionTask\\Tests\\": "tests"
+        }
+    },
+    "require": {
+        "php": "7.1.30",
+        "ext-bcmath": "*",
+        "ext-curl": "*",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.5",
+        "friendsofphp/php-cs-fixer": "2.16"
+    },
+    "config": {
+        "sort-packages": true,
+        "bin-dir": "bin"
+    },
+    "scripts": {
+        "dump": "composer dump-autoload -o",
+        "phpunit": "phpunit",
+        "fix-cs": "php-cs-fixer fix",
+        "test-cs": "php-cs-fixer fix --dry-run -v",
+        "test": ["@phpunit", "@test-cs"]
+    }
+}
