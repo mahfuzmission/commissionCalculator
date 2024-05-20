@@ -1,5 +1,5 @@
 {
-    "name": "mahfuzmission/commission-task",
+    "name": "mahfuzmission/commission-calculator",
     "description": "Calculate transactions commission according to latest exchange rates, user type from csv data",
     "keywords": [],
     "type": "project",
